@@ -7,8 +7,8 @@ import sqlite3
 from pathlib import Path
 from datetime import datetime
 
-ROOT = Path(__file__).resolve().parent.parent
-DB_PATH = Path(__file__).resolve().parent / "menuflow.db"
+ROOT = Path(__file__).resolve().parent
+DB_PATH = ROOT / "menuflow.db"
 app = FastAPI(title="MenuFlow API", version="1.0.0")
 
 app.add_middleware(
